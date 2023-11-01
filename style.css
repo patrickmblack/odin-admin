@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+}
+
+.container {
+    background-color: antiquewhite;
+    border-color: rgb(247, 0, 255);
+    border-style: solid;
+    display: grid;
+    gap: 8px;
+    grid-template-areas: 
+    "dashboard header"
+    "dashboard content";
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 200px 1fr;
+
+}
+
+.dashboard{
+    background-color: aquamarine;
+    border-color: blue;
+    border-style: solid;
+    grid-row: 1/3;
+    grid-area: dashboard;
+}
+
+.header {
+    background-color: grey;
+    border-color: blue;
+    border-style: solid;
+    grid-area: header;
+}
+
+.content {
+    background-color: aliceblue;
+    border-color: blue;
+    border-style: solid;
+    grid-area: content;
+}
