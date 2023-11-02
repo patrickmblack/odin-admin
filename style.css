@@ -116,7 +116,7 @@ li{
 }
 
 
-.projects-container{
+.projects{
     display: grid;
     /* resize: both; */
     gap: 10px;
