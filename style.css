@@ -56,13 +56,6 @@ li{
     grid-area: header;
 }
 
-.content {
-    background-color: rgb(194, 194, 194);
-    border-color: blue;
-    border-style: solid;
-    grid-area: content;
-}
-
 .search-wrapper{
     display: flex;
     padding: 6px;
@@ -85,6 +78,19 @@ li{
     opacity: 50%;
 }
 
+.content {
+    background-color: rgb(194, 194, 194);
+    border-color: blue;
+    border-style: solid;
+
+    gap: 16px;
+    grid-area: content;
+    display: grid;
+    grid-template-areas:
+    "projects announcements"
+    "projects trends";
+}
+
 .project{
     width: min(150px, 20%);
     height: 150px;
@@ -96,5 +102,21 @@ li{
     gap: 10px;
     border-color: blue;
     border-style: solid;
+    grid-area: projects;
+
+}
+.announcements-container{
+    display: grid;
+    gap: 10px;
+    border-color: blue;
+    border-style: solid;
+    grid-area: announcements;
+}
+.trending-container{
+    display: grid;
+    gap: 10px;
+    border-color: blue;
+    border-style: solid;
+    grid-area: trends;
 }
 
