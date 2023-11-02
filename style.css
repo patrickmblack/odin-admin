@@ -1,3 +1,22 @@
+:root[data-theme="light"] {
+    --text: #130e01;
+    --background: #fbebff;
+    --primary: #b700ff;
+    --secondary: #ffd6fc;
+    --accent: #be07cf;
+  }
+  :root[data-theme="dark"] {
+    --text: #fef9ec;
+    --background: #100014;
+    --primary: #b700ff;
+    --secondary: #290026;
+    --accent: #e730f8;
+  }
+  
+
+
+
+
 html,
 body{
     padding: 0;
