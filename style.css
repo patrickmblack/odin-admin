@@ -57,7 +57,7 @@ li{
 }
 
 .content {
-    background-color: aliceblue;
+    background-color: rgb(194, 194, 194);
     border-color: blue;
     border-style: solid;
     grid-area: content;
@@ -83,4 +83,18 @@ li{
     height: 25px;
     width: auto;
     opacity: 50%;
+}
+
+.project{
+    width: min(150px, 20%);
+    height: 150px;
+    background-color: white;
+}
+
+.projects-container{
+    display: grid;
+    gap: 10px;
+    border-color: blue;
+    border-style: solid;
+    
 }
