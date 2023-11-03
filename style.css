@@ -52,8 +52,18 @@ body{
 
 }
 
+li img{
+    height: 20px;
+    width: auto;
+    filter: saturate(100%);
+}
 li{
     list-style: none;
+    display: grid;
+    align-items: center;
+    display: flex;
+    gap: 4px;
+
 }
 
 .dashboard{
@@ -119,6 +129,7 @@ li{
 .projects{
     display: grid;
     /* resize: both; */
+    padding: 8px;
     gap: 10px;
     border-color: blue;
     border-style: solid;
@@ -142,6 +153,7 @@ li{
     padding-left: 12px;
     box-shadow: 2px 2px 5px rgb(194, 194, 194);
     border-left: 8px solid var(--accent);
+    justify-self: center;
 }
 
 .announcements-container{
