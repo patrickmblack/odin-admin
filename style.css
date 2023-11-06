@@ -206,8 +206,13 @@ li{
 .trending-container{
     display: grid;
     gap: 10px;
-    border-color: blue;
-    border-style: solid;
+    padding: 10px;
+
+    border-radius: 12px;
+    background-color: var(--background);
+    box-shadow: var(--box-shadow);
+    border-left: 8px solid var(--accent);
+
     grid-area: trends;
 }
 
