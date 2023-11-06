@@ -126,7 +126,7 @@ li{
 }
 
 
-.projects{
+.projects-container{
     display: grid;
     /* resize: both; */
     padding: 8px;
@@ -134,10 +134,16 @@ li{
     border-color: blue;
     border-style: solid;
     grid-area: projects;
-    overflow: auto;
 
-    grid-template-rows:  repeat(2, 1fr);
-    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows:  50px 1fr;
+
+}
+
+.projects {
+    display: grid;
+    gap: 30px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
 }
 
@@ -147,7 +153,7 @@ li{
 
 .project{
     width: max(150px, 90%);
-    height: 200px;
+    height: max(200px, 80%);
     background-color: var(--background);
     border-radius: 10px;
     padding: 8px;
@@ -181,12 +187,16 @@ li{
 
 
 .announcements-container{
-    display: grid;
+    /* display: grid; */
     gap: 10px;
     border-color: blue;
     border-style: solid;
     grid-area: announcements;
 }
+.announcements-box{
+    background-color: var(--background);
+}
+
 .trending-container{
     display: grid;
     gap: 10px;
