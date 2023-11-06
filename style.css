@@ -55,7 +55,7 @@ body{
 li img{
     height: 20px;
     width: auto;
-    filter: saturate(100%);
+    filter: invert(91%) sepia(96%) saturate(1178%) hue-rotate(183deg) brightness(113%) contrast(105%);
 }
 li{
     list-style: none;
@@ -155,6 +155,20 @@ li{
     border-left: 8px solid var(--accent);
     justify-self: center;
 }
+
+.interaction-buttons{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    padding-right: 10%;
+}
+
+.interaction-buttons img{
+    height: 20px;
+    width: auto;
+}
+
+
 
 .announcements-container{
     display: grid;
