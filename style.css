@@ -5,6 +5,7 @@
     --secondary: #ffd6fc;
     --accent: #be07cf;
     --grey: #e0e0e0;
+    --box-shadow: 2px 2px 5px rgb(194, 194, 194);
   }
   :root[data-theme="dark"] {
     --text: #fef9ec;
@@ -141,10 +142,10 @@ li{
 
 .projects {
     display: grid;
-    gap: 30px;
+    gap: 12px;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
+    overflow: scroll;
 }
 
 .title{
@@ -158,13 +159,13 @@ li{
     border-radius: 10px;
     padding: 8px;
     padding-left: 12px;
-    box-shadow: 2px 2px 5px rgb(194, 194, 194);
+    margin: 15px;
+    box-shadow: var(--box-shadow);
     border-left: 8px solid var(--accent);
     justify-self: center;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    overflow: hidden;
 }
 
 .project-text{
@@ -195,6 +196,11 @@ li{
 }
 .announcements-box{
     background-color: var(--background);
+    height: 85%;
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: var(--box-shadow);
+    border-left: 8px solid var(--accent);
 }
 
 .trending-container{
