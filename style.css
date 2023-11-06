@@ -112,8 +112,8 @@ li{
 
 .content {
     background-color: var(--grey);
-    border-color: blue;
-    border-style: solid;
+    /* border-color: blue;
+    border-style: solid; */
 
     gap: 16px;
     grid-area: content;
@@ -132,8 +132,8 @@ li{
     /* resize: both; */
     padding: 8px;
     gap: 10px;
-    border-color: blue;
-    border-style: solid;
+    /* border-color: blue;
+    border-style: solid; */
     grid-area: projects;
 
     grid-template-rows:  50px 1fr;
@@ -145,7 +145,7 @@ li{
     gap: 12px;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
 .title{
@@ -190,8 +190,10 @@ li{
 .announcements-container{
     /* display: grid; */
     gap: 10px;
-    border-color: blue;
-    border-style: solid;
+    /* border-color: blue;
+    border-style: solid; */
+
+    padding: 8px;
     grid-area: announcements;
 }
 .announcements-box{
@@ -206,7 +208,8 @@ li{
 .trending-container{
     display: grid;
     gap: 10px;
-    padding: 10px;
+    padding: 8px;
+    margin: 8px;
 
     border-radius: 12px;
     background-color: var(--background);
